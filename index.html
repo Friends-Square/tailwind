@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="relative px-5 py-2 min-h-screen min-w-screen bg-[url(assets/bg1.jpg)] bg-cover opacity-80">
+        <nav class="grid grid-cols-8 justify-center items-center">
+
+            <!-- logo -->
+            <div class="w-auto h-[60px] col-span-1 grid justify-start items-center">
+                <svg width="16" height="16" fill="white">
+                <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0H.334ZM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2V9.72Z"/>
+              </svg>
+            </div>
+
+            <!-- menu -->
+            <div class="grid text-white col-span-6 text-center grid-flow-col"><ul class="flex justify-center">
+                <li class="px-5 py-4 hover:bg-slate-500"><a href="#">Home</a></li>
+                <li class="px-5 py-4 hover:bg-slate-500"><a href="#">About</a></li>
+                <li class="px-5 py-4 hover:bg-slate-500"><a href="#">Features</a></li>
+                <li class="px-5 py-4 hover:bg-slate-500"><a href="#">Contact</a></li>
+            </ul></div>
+            <div class="w-auto h-[60px] grid grid-flow-col justify-end items-center col-span-1">
+                <svg width="16" height="16" fill="white">
+                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>
+              </svg>
+            </div>
+        </nav>
+
+        <div class="flex flex-row text-white text-center xl:mt-30 md:mt-20 sm:mt-2">
+            <div class="flex flex-col sm:col-span-full xl:mt-20 md:mt-20 sm:mt-10 max-w-lg ml-20 xl:w-[50%] sm:w-full xl:order-1 md:order-1 sm:order-2">
+                <h1 class="sm:text-4xl xl:text-6xl font-semibold leading-normal">Groceries <br> delivery in <span class="font-light">15 mins</span></h1>
+                <p>Grocify offer a wide range of products, including fresh products, meats, dairy, baked goods and non-perishable items.</p>
+                <div class="mt-10">
+                    <a href="#" class="bg-yellow-300 rounded-3xl px-8 py-3 hover:bg-transparent hover:border-yellow-300 duration-300 hover:border font-medium inline-block mr-4 sm:m-2 md:m-2 xs:m-2">Order Now</a>
+                    <a href="#" class="bg-yellow-300 rounded-3xl px-8 py-3 hover:bg-transparent hover:border-yellow-300 duration-300 hover:border font-medium inline-block mr-4 sm:m-2 md:m-2">Download App <span class="text-lg inline-block rotate-90">&#10148;</span></a>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:col-span-full xl:mt-20 md:mt-20 sm:mt-0 w-[50%] sm:w-[100%] xl:order-2 md:order-2 sm:order-1">
+                <img class="xl:w-[80%] ml-auto mr-20 mt-auto mb-0" src="./assets/grocery.png" alt="grocery image">
+            </div>
+    </div>
+    </div>
+</body>
+</html>
